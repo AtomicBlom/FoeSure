@@ -10,19 +10,19 @@ namespace FoeSure
 	{
 		public static void Main(string[] args)
 		{
-			var program = typeof(GameImpl).Assembly.GetType("FoeFrenzy.Main.Program");
-			var initLog = program.GetMethod("InitLog", BindingFlags.Static | BindingFlags.NonPublic);
-			var fieldInfo = program.GetField("logStream", BindingFlags.Static | BindingFlags.NonPublic);
-			var saveCrashReport = program.GetMethod("SaveCrashReport", BindingFlags.Static | BindingFlags.NonPublic);
+			var ፙ = typeof(GameImpl).Assembly.GetType("FoeFrenzy.Main.Program");
+			var ㄱ_ㄱ = ፙ.GetMethod("InitLog", BindingFlags.Static | BindingFlags.NonPublic);
+			var ㅇㅅㅇ = ፙ.GetField("logStream", BindingFlags.Static | BindingFlags.NonPublic);
+			var ꅃ = ፙ.GetMethod("SaveCrashReport", BindingFlags.Static | BindingFlags.NonPublic);
 
-			if (initLog == null || fieldInfo == null || saveCrashReport == null)
+			if (ㄱ_ㄱ == null || ㅇㅅㅇ == null || ꅃ == null)
 			{
 				throw new Exception("ELLPECKINATOR. WHAT HAVE YOU DONE!?");
 			}
 
 			try
 			{
-				initLog.Invoke(null, new object[0]);
+				ㄱ_ㄱ.Invoke(null, new object[0]);
 				using (var impl = new ModdedGameImpl(args))
 				{
 					if (Directory.Exists(@".\mods"))
@@ -42,11 +42,11 @@ namespace FoeSure
 			}
 			catch (Exception ex)
 			{
-				saveCrashReport.Invoke(null, new object[] {ex});
+				ꅃ.Invoke(null, new object[] {ex});
 			}
 			finally
 			{
-				var logStream = (StreamWriter) fieldInfo.GetValue(null);
+				var logStream = (StreamWriter) ㅇㅅㅇ.GetValue(null);
 				logStream?.Close();
 			}
 		}
