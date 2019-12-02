@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomicMod", "AtomicMod\AtomicMod.csproj", "{21EE0176-AE33-455B-B637-A90A90B21891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoeSure", "FoeSure\FoeSure.csproj", "{AE087B87-F27A-4D7F-AC22-1F8145F90693}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21EE0176-AE33-455B-B637-A90A90B21891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21EE0176-AE33-455B-B637-A90A90B21891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21EE0176-AE33-455B-B637-A90A90B21891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21EE0176-AE33-455B-B637-A90A90B21891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE087B87-F27A-4D7F-AC22-1F8145F90693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE087B87-F27A-4D7F-AC22-1F8145F90693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE087B87-F27A-4D7F-AC22-1F8145F90693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE087B87-F27A-4D7F-AC22-1F8145F90693}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09BF69C9-E8A4-421D-BFB3-769D5D125BC0}
+	EndGlobalSection
+EndGlobal
